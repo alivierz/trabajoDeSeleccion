@@ -20,6 +20,7 @@ const Search = () => {
     return(
         <div className="search">
             <input type="text" onChange={(e) => setText(e.target.value)} onKeyUp={(e) => sending(e.code)}/>
+            <button onClick={() => nav(`/pokemon/${text.trim().toLowerCase()}`)} className="button-search">SEARCH</button>
         </div>
     )
 }
