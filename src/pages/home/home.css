@@ -1,0 +1,48 @@
+.home{
+    padding-top: 50px;
+}
+.list-pokemon{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 1rem 0 1rem;
+}
+.list-pokemon > a{
+    background-image: url(https://i.imgur.com/4mtQj2P.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: .3rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.buttons{
+    padding: 1rem 0;
+    text-align: center;
+}
+.buttons > button {
+    margin: 0 1rem;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    transition: all .5s;
+    cursor: pointer;
+}
+.buttons > button:hover{
+    background-color: darkgreen;
+}
+@media (min-width: 650px){
+    .list-pokemon{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 900px){
+    .list-pokemon{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

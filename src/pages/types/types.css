@@ -1,0 +1,43 @@
+.types-list{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem 1rem 1rem 1rem;
+}
+.types-list > div{
+    cursor: pointer;
+}
+.title{
+    margin: 0;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+.types-list > div{
+    border: 1px solid black;
+    margin: .5rem;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 4rem;
+    background-image: url(https://64.media.tumblr.com/2426a2b698ecfef1b3381d627cddeeb6/7aee52b2846e8a19-44/s400x600/75aa32d686860afd2a395a553d71da236a937874.gifv);
+    background-position: center;
+    background-size: cover;
+}
+.types-list > div > h6{
+    color: black;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: .5rem;
+    background-color: rgba(0, 0, 0, .4);
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    color: white;
+}
+
+@media (min-width: 650px){
+    .types-list{
+        grid-template-columns: repeat(3 , 1fr);
+    }
+}
